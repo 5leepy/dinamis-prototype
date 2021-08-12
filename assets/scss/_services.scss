@@ -1,0 +1,76 @@
+/* Services Section
+--------------------------------*/
+
+#services {
+    padding: 40px 0;
+  
+    .box {
+      padding: 40px;
+      box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+      background: #fff;
+      transition: 0.4s;
+      height: 100%;
+  
+      &:hover {
+        box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+        transform: translateY(-10px);
+      }
+  
+      .icon {
+        float: left;
+  
+        i {
+          color: #444;
+          font-size: 64px;
+          transition: 0.5s;
+          line-height: 0;
+          margin-top: 34px;
+  
+          &:before {
+            background: #0c2e8a;
+            background: linear-gradient(45deg, $tertiaryColor 0%, $textColor 100%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+  
+      h4 {
+        margin-left: 100px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 22px;
+  
+        a {
+          color: #444;
+        }
+      }
+  
+      p {
+        font-size: 14px;
+        margin-left: 100px;
+        margin-bottom: 0;
+        line-height: 24px;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #services .box {
+      .box {
+        margin-bottom: 20px;
+      }
+  
+      .icon {
+        float: none;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+  
+      h4, p {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }

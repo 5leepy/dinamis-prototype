@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  a {
+    color: $textColor;
+    text-decoration: none;
+    transition: 0.5s;
+  
+    &:hover, &:active, &:focus {
+      color: $tertiaryColor;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+section {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  
+  /* Sections Header
+  --------------------------------*/
+  
+  .section-header {
+    margin-bottom: 30px;
+  
+    h2 {
+      font-size: 32px;
+      color: $textColor;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 20px;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: $tertiaryColor;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: $primairyColor;
+    width: 40px;
+    height: 40px;
+    transition: all 0.4s;
+  
+    i {
+      font-size: 28px;
+      color: #fff;
+      line-height: 0;
+    }
+  
+    &:hover {
+      background: $tertiaryColor;
+      color: #fff;
+    }
+  
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
