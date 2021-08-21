@@ -32,7 +32,7 @@
         color: #000;
   
         &:hover {
-          color: #50d8af;
+          color: $tertiaryColor;
         }
       }
     }
@@ -56,14 +56,59 @@
       border-right: 1px solid #ddd;
     }
   }
+  .footer {
+    background: $primairyColor;
+    color: #fff;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      position: relative;
+      margin-bottom: 10px;
+    }
+  
+    a {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: $tertiaryColor;
+      transition: 0.3s;
+  
+      &:focus {
+       
 
+
+        color: $tertiaryColor;
+        transition: 0.3s;
+      }
+  
+      i, &:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+      }
+  
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
   #footer {
-    background: #f2f5f8;
+    background: $primairyColor;
     padding: 0 0 30px 0;
     font-size: 14px;
+    
   
     .copyright {
       text-align: center;
       padding-top: 30px;
+      color: $secondaryColor;
+      a {
+        color: $tertiaryColor;
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
     }
   }
